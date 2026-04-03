@@ -4,10 +4,13 @@
 
 Turn raw sources -- papers, blog posts, docs, transcripts -- into a structured, interlinked markdown wiki using any LLM. Browse it in Obsidian.
 
-> "I basically have a process of compiling all the raw information sources (blog posts, papers, etc.) into a personal wiki ... I think this is going to be a very common workflow."
-> -- Andrej Karpathy, April 2026
+> "raw data from a given number of sources is collected, then compiled by an LLM into a .md wiki, then operated on by various CLIs by the LLM to do Q&A and to incrementally enhance the wiki, and all of it viewable in Obsidian."
+>
+> — Andrej Karpathy, [Apr 3, 2026](https://x.com/karpathy/status/1907477278835749189)
 
 ---
+
+[![Use Template](https://img.shields.io/badge/Use_This-Template-2ea44f?style=for-the-badge)](https://github.com/SingggggYee/karpathy-kb-template/generate) [![Stars](https://img.shields.io/github/stars/SingggggYee/karpathy-kb-template?style=for-the-badge)](https://github.com/SingggggYee/karpathy-kb-template)
 
 ## Quick Start
 
@@ -231,6 +234,8 @@ Yes. It's a Git repo with plain text files. Standard branch-and-merge workflows 
 ## Related Projects
 
 - [awesome-llm-knowledge-bases](https://github.com/SingggggYee/awesome-llm-knowledge-bases) -- Community resources for LLM-powered knowledge management
+- [wiki-compiler](https://github.com/SingggggYee/wiki-compiler) -- CLI tool that automates this template's workflow
+- [kb-lint](https://github.com/SingggggYee/kb-lint) -- Linter for your compiled wiki
 - Obsidian -- [obsidian.md](https://obsidian.md) -- The recommended viewer for this template
 - Marp -- [marp.app](https://marp.app) -- Slide deck renderer for the slides prompt output
 - Mermaid -- [mermaid.js.org](https://mermaid.js.org) -- Diagram renderer for the visualize prompt output
