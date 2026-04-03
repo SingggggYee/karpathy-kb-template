@@ -1,0 +1,10 @@
+{
+  "strictLineBreaks": false,
+  "showFrontmatter": true,
+  "defaultViewMode": "preview",
+  "readableLineLength": true,
+  "showLineNumber": false,
+  "spellcheck": true,
+  "autoConvertHtml": true,
+  "livePreview": true
+}
