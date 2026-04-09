@@ -6,7 +6,7 @@ Turn raw sources -- papers, blog posts, docs, transcripts -- into a structured, 
 
 > "raw data from a given number of sources is collected, then compiled by an LLM into a .md wiki, then operated on by various CLIs by the LLM to do Q&A and to incrementally enhance the wiki, and all of it viewable in Obsidian."
 >
-> — Andrej Karpathy, [Apr 3, 2026](https://x.com/karpathy/status/1907477278835749189)
+> - Andrej Karpathy, [Apr 3, 2026](https://x.com/karpathy/status/1907477278835749189)
 
 ---
 
