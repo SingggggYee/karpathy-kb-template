@@ -217,17 +217,20 @@ The `examples/sample-wiki/` directory contains a realistic mini-wiki about trans
 
 ## FAQ
 
-**Q: Which LLM should I use?**
-Any model with a large context window works. Claude (200K context), GPT-4 (128K), and Gemini (1M+) all handle the prompts well. For ingesting long documents, prefer models with larger context windows.
+**Q: How do I start a Karpathy-style knowledge base?**
+Clone this template with `gh repo create my-kb --template SingggggYee/karpathy-kb-template --clone`, drop a source document into `raw/`, and run the ingest prompt with any LLM. Three sources on a focused topic is enough to see the wiki-link graph emerge.
 
-**Q: Can I use this with tools other than Obsidian?**
-Yes. The wiki is plain markdown files with YAML frontmatter. Any tool that supports markdown works: VS Code, Logseq, Notion (with import), or even `grep`. Obsidian just gives you the best experience with wiki-links and graph view.
+**Q: What LLM should I use for knowledge base compilation?**
+Any model with a large context window works well. Claude (200K context), GPT-4 (128K), and Gemini (1M+) all handle the prompts. For ingesting long documents like papers or books, prefer models with larger context windows.
 
-**Q: How big can the wiki get?**
-There is no hard limit. Obsidian handles thousands of articles smoothly. The LLM prompts work best when you can fit the relevant portion of the wiki in the context window. For very large wikis, use the query prompt with specific articles rather than the entire wiki.
+**Q: Can I use this template without Obsidian?**
+Yes. The wiki is plain markdown with YAML frontmatter, so any editor works: VS Code, Logseq, Notion (with import), or even `grep`. Obsidian just gives the best experience with `[[wiki-links]]`, graph view, and Dataview queries.
 
-**Q: Can multiple people contribute?**
-Yes. It's a Git repo with plain text files. Standard branch-and-merge workflows apply. Consider using the lint prompt after merges to catch inconsistencies.
+**Q: How do I add new sources to my knowledge base?**
+Copy the file into `raw/`, then paste `prompts/ingest.md` into your LLM along with the source content. The LLM will produce structured wiki articles you place in `wiki/`. Update `wiki/_index.md` after each ingestion.
+
+**Q: What's the difference between this template and wiki-compiler?**
+This template is the manual, prompt-driven workflow -- you paste prompts into any LLM and organize the output yourself. [wiki-compiler](https://github.com/SingggggYee/wiki-compiler) is a CLI tool that automates this same workflow end-to-end, including ingestion, linking, and linting.
 
 ---
 
